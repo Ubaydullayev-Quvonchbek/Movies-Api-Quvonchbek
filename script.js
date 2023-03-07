@@ -1,6 +1,6 @@
 const key = "8c8e1a50-6322-4135-8875-5d40a5420d86";
 const popular_movies =
-    `https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=5`;
+    `https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=13`;
 const search =
     `https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=`;
 getMovies(popular_movies);
@@ -14,6 +14,8 @@ async function getMovies(url) {
     const data = await response.json();
     showMovies(data);
     console.log(data.films);
+    let body = document.querySelector("body");
+    body.style.padding = "0";
 }
 function showMovies(data) {
     let row = document.querySelector(".row");
@@ -46,4 +48,5 @@ button.onclick = () => {
     if (input.value) {
         getMovies(searchMovies);
     }
+    input.value = "";
 }

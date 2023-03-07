@@ -9,6 +9,7 @@ body {
     background-size: cover;
     text-align: center;
     backdrop-filter: blur(10px);
+    padding-bottom: 530px;
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     padding-bottom: 100px;
 }
 
-.forms-inputs-buttons-slect-options {
+.form-input-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,10 +69,10 @@ button {
 }
 
 .card1 {
-    width: 300px;
+    width: 100%;
     height: 615px;
     position: relative;
-    border: 1px solid #fff;
+    border: 1.5px solid #fff;
     box-sizing: content-box;
     margin-top: 30px;
     border-radius: 8px;
@@ -100,8 +101,6 @@ img:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 5px;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
 }
 
 .df {
@@ -130,9 +129,6 @@ img:hover {
 
 .genres {
     font-size: 15px;
-    font-weight: 400;
-    color: springgreen;
+    color: yellow;
     margin-bottom: 10px;
-    padding-left: 2.5px;
-    padding-right: 2.5px;
 }
