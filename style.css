@@ -76,6 +76,7 @@ button {
     box-sizing: content-box;
     margin-top: 30px;
     border-radius: 8px;
+    text-align: center;
 }
 
 img {
@@ -129,6 +130,12 @@ img:hover {
 
 .genres {
     font-size: 15px;
-    color: yellow;
+    font-weight: 400;
+    color: greenyellow;
+    background-color: #153243;
+    box-sizing: content-box;
     margin-bottom: 10px;
+    width: 50%;
+    border-radius: 3em;
+    margin: auto;
 }
